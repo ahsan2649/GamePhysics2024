@@ -57,9 +57,11 @@ void SetThickness(float thickness);
 void Reset();
 
 // Draws a handle that the user can use to modify the position.
+// Only supports one handle to be drawn at the same time, see https://github.com/CedricGuillemet/ImGuizmo/issues/16.
 bool PositionHandle(glm::vec2& position);
 bool PositionHandle(glm::mat4& modelMatrix);
 // Draws a handle that the user can use to modify the rotation.
+// Only supports one handle to be drawn at the same time, see https://github.com/CedricGuillemet/ImGuizmo/issues/16.
 bool RotationHandle(const glm::vec2& position, float& angle);
 bool RotationHandle(glm::mat4& modelMatrix);
 
